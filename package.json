@@ -1,8 +1,7 @@
 {
-  "name": "keycloakify-starter",
-  "homepage": "https://starter.keycloakify.dev",
+  "name": "stereocean",
   "version": "6.1.10",
-  "description": "A starter/demo project for keycloakify",
+  "description": "Stereocean keycloak custom theme",
   "repository": {
     "type": "git",
     "url": "git://github.com/codegouvfr/keycloakify-starter.git"
@@ -10,8 +9,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "build-keycloak-theme": "yarn build && keycloakify",
+    "vite-build": "tsc && vite build",
+    "build": "pnpm vite-build && keycloakify",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
